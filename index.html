@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Muhammad Safiullah Memon | Building Verified Systems That Scale</title>
+  <meta name="description" content="Portfolio of Muhammad Safiullah Memon, an undergraduate computer science student researching operating systems, distributed systems, formal verification and AI systems.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=Schibsted+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="wrap header-row">
+      <a class="brand" href="#top" aria-label="Muhammad Safiullah Memon, back to top">Safiullah</a>
+
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="siteNav">Menu</button>
+
+      <nav id="siteNav" class="site-nav" aria-label="Primary">
+        <a href="#about">About</a>
+        <a href="#research">Research</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#coursework">Coursework</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <button class="theme-toggle" id="themeToggle" aria-label="Switch to dark theme" aria-pressed="false">Dark</button>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ===== HERO ===== -->
+    <section class="hero" id="top">
+      <div class="wrap hero-grid">
+        <div class="hero-copy">
+          <h1>Muhammad Safiullah Memon</h1>
+          <p class="tagline">Building verified systems that scale.</p>
+          <p class="hero-sub">
+            I'm an undergraduate in Computer Science at Mehran University of Engineering &amp; Technology,
+            Jamshoro, and a research intern at the University of Virginia. I work on operating systems,
+            distributed systems, and the formal methods that help us trust them.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#projects">View projects</a>
+            <a class="btn" href="CV.pdf">Download CV</a>
+          </div>
+          <ul class="social-links" aria-label="Profiles">
+            <li><a href="https://github.com/Safiullah136" rel="noopener">GitHub</a></li>
+            <li><a href="https://linkedin.com/in/muhammad-safiullah-568890212" rel="noopener">LinkedIn</a></li>
+            <li><a href="mailto:muhammadsafiullah136@gmail.com">Email</a></li>
+          </ul>
+        </div>
+
+        <!-- Interactive Raft cluster (drawn by script.js) -->
+        <figure class="raft" id="raft">
+          <div class="raft-stage">
+            <svg id="raftSvg" viewBox="0 0 320 250" role="img"
+                 aria-label="A five-node Raft cluster. Select a node to crash or restart it."></svg>
+          </div>
+          <div class="raft-controls">
+            <button class="btn btn-small" id="raftWrite" type="button">Write x = 1</button>
+            <button class="btn btn-small" id="raftReset" type="button">Reset</button>
+          </div>
+          <p class="raft-status" id="raftStatus" role="status" aria-live="polite"></p>
+          <figcaption>
+            A small Raft cluster, like the one I built for a fault-tolerant key-value store.
+            Select a node to crash or restart it. The cluster keeps working while 3 of 5 nodes are up.
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ===== ABOUT ===== -->
+    <section class="section" id="about">
+      <div class="wrap section-grid">
+        <h2>About me</h2>
+        <div class="section-body about-body">
+          <div class="portrait" id="portrait">
+            <img src="images/profile.jpeg" alt="Portrait of Muhammad Safiullah Memon" width="144" height="144">
+          </div>
+          <div>
+            <p>
+              I am an undergraduate student in computer science interested in building efficient, reliable,
+              and verifiable computer systems. My interests lie at the intersection of systems, programming
+              languages, and formal methods.
+            </p>
+            <p>
+              I like to study system abstractions, runtime mechanisms, and hardware-software interactions,
+              and how they affect performance. Right now I'm digging into how to analyze the performance
+              of large-scale, complex systems, and how formal methods can help with that analysis.
+            </p>
+            <p>
+              Outside of computing, I enjoy cooking. I speak Sindhi and English.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== RESEARCH ===== -->
+    <section class="section" id="research">
+      <div class="wrap section-grid">
+        <h2>Research interests</h2>
+        <div class="section-body">
+          <div class="interest-grid">
+            <article class="interest">
+              <h3>Computer systems</h3>
+              <p>Operating systems, storage systems, distributed systems, networks, and performance-oriented infrastructure.</p>
+            </article>
+            <article class="interest">
+              <h3>Programming languages</h3>
+              <p>Program analysis, language runtimes, compiler optimizations, and systems abstractions.</p>
+            </article>
+            <article class="interest">
+              <h3>Formal verification</h3>
+              <p>Verified systems software, program logics, and techniques for establishing software correctness.</p>
+            </article>
+            <article class="interest">
+              <h3>AI systems</h3>
+              <p>Efficient LLM inference, memory management, data compression, and hardware-software co-design.</p>
+            </article>
+          </div>
+
+          <h3 class="sub-heading">Publication</h3>
+          <article class="publication">
+            <h4>AutoX: Discovering Deployable Lossless Codecs for Evolving AI Artifacts</h4>
+            <p class="authors">
+              Tingfeng Lan, Haoran Ni, <strong>Muhammad Safiullah Memon</strong>, Zhaoyuan Su, Zirui Wang,
+              Yunjia Zheng, Juncheng Yang, Yue Cheng
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== EXPERIENCE + EDUCATION ===== -->
+    <section class="section" id="experience">
+      <div class="wrap section-grid">
+        <h2>Experience</h2>
+        <div class="section-body">
+          <article class="entry">
+            <div class="entry-head">
+              <h3>Research Intern, advised by Prof. Yue Cheng</h3>
+              <p class="entry-meta">University of Virginia · April 2026 – September 2026</p>
+            </div>
+            <p class="entry-topic">AI data compression for KV cache, model weights, and embeddings</p>
+            <ul class="plain-list">
+              <li>Benchmarked compression strategies on 9B-parameter models, measuring compression ratio and compression throughput.</li>
+              <li>Reviewed the literature on floating-point compression for scientific data.</li>
+              <li>Helped shape the research direction by proposing and evaluating ideas, and owned experiments end to end.</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="education">
+      <div class="wrap section-grid">
+        <h2>Education</h2>
+        <div class="section-body">
+          <article class="entry">
+            <div class="entry-head">
+              <h3>BSc in Computer Science</h3>
+              <p class="entry-meta">2024 – 2028</p>
+            </div>
+            <p>Mehran University of Engineering &amp; Technology, Jamshoro, Pakistan</p>
+            <p class="gpa">Grade: <strong>3.94 / 4.00</strong></p>
+          </article>
+
+          <h3 class="sub-heading">Honours and awards</h3>
+          <article class="entry">
+            <div class="entry-head">
+              <h3>First place, Pakistan Cryptography Challenge (Amateurs)</h3>
+              <p class="entry-meta">National Center for Cyber Security · November 2024</p>
+            </div>
+            <p>
+              A three-round national competition covering mathematical reasoning, cipher and puzzle solving,
+              and a team final of ten logic problems. One final question described a zero-knowledge proof
+              without naming it, and teams had to work out the idea themselves.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PROJECTS ===== -->
+    <section class="section" id="projects">
+      <div class="wrap section-grid">
+        <h2>Projects</h2>
+        <div class="section-body">
+          <div class="filters" role="group" aria-label="Filter projects by area">
+            <button class="chip is-active" type="button" data-filter="all" aria-pressed="true">All</button>
+            <button class="chip" type="button" data-filter="systems" aria-pressed="false">Systems and networks</button>
+            <button class="chip" type="button" data-filter="databases" aria-pressed="false">Databases</button>
+            <button class="chip" type="button" data-filter="languages" aria-pressed="false">Languages</button>
+            <button class="chip" type="button" data-filter="ml" aria-pressed="false">ML systems</button>
+            <button class="chip" type="button" data-filter="hardware" aria-pressed="false">Hardware</button>
+          </div>
+          <p class="filter-count" id="filterCount" role="status" aria-live="polite"></p>
+
+          <div class="project-grid" id="projectGrid">
+
+            <article class="project" data-cat="systems">
+              <h3>Fault-tolerant sharded key-value store</h3>
+              <p>Implemented the Raft consensus protocol, then built a fault-tolerant sharded key-value store on top of it.</p>
+              <ul class="tags"><li>Raft</li><li>Distributed systems</li></ul>
+            </article>
+
+            <article class="project" data-cat="systems">
+              <h3>MapReduce</h3>
+              <p>
+                Implemented MapReduce from the original paper. Workers request map and reduce tasks from a master,
+                and map output is partitioned by key hash into reduce buckets. The master reassigns any task that
+                runs past 10 seconds, and workers exit when the master is gone.
+              </p>
+              <ul class="tags"><li>Fault tolerance</li><li>Distributed systems</li></ul>
+            </article>
+
+            <article class="project" data-cat="systems">
+              <h3>xv6 kernel labs</h3>
+              <p>
+                Worked through the MIT OS labs: system calls, superpages in the page table, copy-on-write,
+                traps, a network stack, locks, the file system, and mmap.
+              </p>
+              <ul class="tags"><li>Operating systems</li><li>C</li></ul>
+            </article>
+
+            <article class="project" data-cat="systems">
+              <h3>Bufferbloat on Mininet</h3>
+              <p>
+                Studied bufferbloat by comparing TCP Reno and TCP BBR over a network with a slow uplink.
+                Also built a multi-switch network that handles traffic in a static topology.
+              </p>
+              <ul class="tags"><li>Networking</li><li>Mininet</li><li>TCP</li></ul>
+            </article>
+
+            <article class="project" data-cat="databases">
+              <h3>RookieDB</h3>
+              <p>
+                Implemented parts of a database system: a B+ tree index (get, put, remove, scan, bulk loading),
+                Grace hash join and sort-merge join, a System R style query optimizer, and a lock manager with
+                intent locks and two-phase locking.
+              </p>
+              <ul class="tags"><li>Indexing</li><li>Query optimization</li><li>Concurrency</li></ul>
+            </article>
+
+            <article class="project" data-cat="languages">
+              <h3>Scheme-like language compiler and interpreter</h3>
+              <p>
+                Implemented character, vector, list, string and file-handling features (using a C runtime),
+                let and case expressions, and a parser for an ML-family language. Added constant propagation
+                and function inlining as optimizations.
+              </p>
+              <ul class="tags"><li>Compilers</li><li>Optimization</li></ul>
+            </article>
+
+            <article class="project" data-cat="ml">
+              <h3>Needle: a minimal deep learning library</h3>
+              <p>
+                Built a small PyTorch-like library across four homeworks: reverse-mode automatic differentiation
+                with topological sorting, neural network modules and optimizers, CPU and CUDA array backends,
+                and CNN, RNN and Transformer models on top.
+              </p>
+              <ul class="tags"><li>Autodiff</li><li>CUDA</li><li>Python</li></ul>
+            </article>
+
+            <article class="project" data-cat="ml">
+              <h3>Flash Attention</h3>
+              <p>Implemented the Flash Attention algorithm following the original paper.</p>
+              <ul class="tags"><li>GPU kernels</li><li>Transformers</li></ul>
+            </article>
+
+            <article class="project" data-cat="hardware">
+              <h3>2-stage pipelined RISC-V CPU</h3>
+              <p>
+                Implemented ROM-based control logic, ALU, register file, branch comparator, and immediate generator,
+                and avoided branch hazards by propagating no-ops through the pipeline.
+              </p>
+              <ul class="tags"><li>RISC-V</li><li>Computer architecture</li></ul>
+            </article>
+
+          </div>
+          <p class="more-link">More code on <a href="https://github.com/Safiullah136" rel="noopener">GitHub</a>.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SKILLS ===== -->
+    <section class="section" id="skills">
+      <div class="wrap section-grid">
+        <h2>Skills</h2>
+        <div class="section-body">
+          <dl class="skills">
+            <div>
+              <dt>Languages</dt>
+              <dd>C, C++, CUDA, Python, Java, RISC-V assembly, x86 assembly, Rocq (proofs)</dd>
+            </div>
+            <div>
+              <dt>ML libraries</dt>
+              <dd>PyTorch, NumPy, Pandas, Scikit-learn, Matplotlib, NVIDIA Triton</dd>
+            </div>
+            <div>
+              <dt>Tools</dt>
+              <dd>Git and GitHub, GitLab, Docker, Mininet</dd>
+            </div>
+            <div>
+              <dt>Areas</dt>
+              <dd>Operating systems, distributed systems, computer networks, database systems, compilers, formal verification, machine learning systems</dd>
+            </div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== COURSEWORK ===== -->
+    <section class="section" id="coursework">
+      <div class="wrap section-grid">
+        <h2>Coursework</h2>
+        <div class="section-body">
+          <p class="lead">
+            Online courses and open course material I've worked through, with labs and assignments.
+            Open a course to see what I built.
+          </p>
+
+          <div class="accordion">
+            <details>
+              <summary>MIT 6.512 Formal Reasoning About Programs</summary>
+              <ul class="plain-list">
+                <li>HW4: proved a minimal binary search tree implementation correct.</li>
+                <li>HW7: extended the type soundness proofs with subtyping.</li>
+                <li>HW8: proved a noninterference property for IMP programs, for a confidentiality definition that is safe but not complete.</li>
+              </ul>
+            </details>
+
+            <details>
+              <summary>MIT 6.826 Principles of Computer Systems</summary>
+              <ul class="plain-list">
+                <li>Labs in the style of the FSCQ research paper.</li>
+                <li>Lab 2: a remapped disk that hides a bad sector and exports a disk one sector smaller.</li>
+                <li>Lab 3: implemented and proved a crash-safe log.</li>
+                <li>Lab 4: a disk replication system that tolerates a single disk failing at any time.</li>
+                <li>Read Everest, CompCert, FSCQ, x86-TSO, TSVD, CertiKOS, Armada, IronFleet, Komodo and Serval, and learned refinement through abstraction functions, abstraction relations, history variables and prophecy variables.</li>
+              </ul>
+            </details>
+
+            <details>
+              <summary>MIT 6.566 Computer Systems Security</summary>
+              <ul class="plain-list">
+                <li>Buffer overflow exploitation, and fixing the vulnerability afterwards.</li>
+                <li>Privilege separation of a web application into auth, bank and Python profile services.</li>
+                <li>Finding bugs with symbolic (concolic) execution.</li>
+                <li>Browser security: XSS, fake login pages, and building a worm.</li>
+                <li>Obtaining TLS certificates with ACME and adding WebAuthn login.</li>
+              </ul>
+            </details>
+
+            <details>
+              <summary>UW CSE 505 Programming Languages</summary>
+              <ul class="plain-list">
+                <li>Denotational, operational (small-step and big-step) and axiomatic semantics, including Hoare logic.</li>
+                <li>Lambda calculus, type safety with the simply typed lambda calculus, and polymorphism with System F.</li>
+                <li>All assignments were proofs in Rocq.</li>
+              </ul>
+            </details>
+
+            <details>
+              <summary>Other courses</summary>
+              <ul class="plain-list">
+                <li>MIT 6.824 Distributed Systems</li>
+                <li>MIT 6.810 Operating Systems</li>
+                <li>ETHZ Advanced Topics in Communication Networks (in progress)</li>
+                <li>UC Berkeley CS168 Internet Architecture and Protocols</li>
+                <li>UC Berkeley CS186 Database Systems</li>
+                <li>UC Berkeley CS61C Great Ideas in Computer Architecture</li>
+                <li>CS164 Programming Languages and Compilers</li>
+                <li>CMU 10-414 Deep Learning Systems</li>
+                <li>CMU 15-418 Parallel Programming and Computer Architecture</li>
+                <li>CS 224R Deep Reinforcement Learning</li>
+                <li>MIT 6.5940 TinyML and Efficient Deep Learning Computing</li>
+              </ul>
+            </details>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CONTACT ===== -->
+    <section class="section" id="contact">
+      <div class="wrap section-grid">
+        <h2>Contact</h2>
+        <div class="section-body contact-body">
+          <div>
+            <p class="lead">Interested in collaborating? I'd love to hear from you.</p>
+            <p class="email-row">
+              <a id="emailLink" href="mailto:muhammadsafiullah136@gmail.com">muhammadsafiullah136@gmail.com</a>
+              <button class="btn btn-small" id="copyEmail" type="button">Copy email</button>
+            </p>
+            <p class="copy-status" id="copyStatus" role="status" aria-live="polite"></p>
+            <ul class="contact-links">
+              <li><a href="https://github.com/Safiullah136" rel="noopener">github.com/Safiullah136</a></li>
+              <li><a href="https://www.linkedin.com/in/muhammad-safiullah-568890212/" rel="noopener">LinkedIn profile</a></li>
+            </ul>
+          </div>
+
+          <form id="contactForm" class="contact-form" novalidate>
+            <div class="field">
+              <label for="name">Your name</label>
+              <input id="name" name="name" type="text" autocomplete="name" required>
+              <p class="error" id="nameError" aria-live="polite"></p>
+            </div>
+            <div class="field">
+              <label for="email">Your email</label>
+              <input id="email" name="email" type="email" autocomplete="email" required>
+              <p class="error" id="emailError" aria-live="polite"></p>
+            </div>
+            <div class="field">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" required></textarea>
+              <p class="error" id="messageError" aria-live="polite"></p>
+            </div>
+            <button class="btn btn-primary" type="submit">Open in my email app</button>
+            <p class="form-note">This opens a pre-filled email in your mail app. Nothing is sent from this page.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-row">
+      <p>&copy; <span id="year">2026</span> Muhammad Safiullah Memon</p>
+      <p><a href="#top">Back to top</a></p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
